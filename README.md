@@ -1,2 +1,7 @@
-# fpga-audio-processor
-Audio filtering system using FPGA
+# FPGA Audio Processor
+project goal
+<image of block diagram/>
+
+prototype features:
+
+prototype description:
