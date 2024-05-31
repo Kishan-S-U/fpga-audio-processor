@@ -1,0 +1,741 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 176 8 344 24)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "CLOCK_50" (rect 5 0 60 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 112 24 176 48))
+)
+(pin
+	(input)
+	(rect 72 184 240 200)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "AUD_BCLK" (rect 5 0 59 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 16 200 72 224))
+)
+(pin
+	(input)
+	(rect 72 208 240 224)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "AUD_ADCDAT" (rect 5 0 73 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 16 224 72 248))
+)
+(pin
+	(input)
+	(rect 64 224 240 240)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "AUD_ADCLRCK" (rect 5 0 80 17)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 8 240 64 264))
+)
+(pin
+	(input)
+	(rect 64 264 240 280)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "AUD_DACLRCK" (rect 5 0 80 17)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 8 280 64 304))
+)
+(pin
+	(input)
+	(rect 208 528 376 544)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "KEY[0]" (rect 5 0 38 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 136 544 208 568))
+)
+(pin
+	(output)
+	(rect 64 248 240 264)
+	(text "OUTPUT" (rect 137 6 175 16)(font "Arial" (font_size 6)))
+	(text "AUD_DACDAT" (rect 5 -1 73 16)(font "Intel Clear" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 176 8)(pt 124 8))
+		(line (pt 124 12)(pt 98 12))
+		(line (pt 124 4)(pt 98 4))
+		(line (pt 124 4)(pt 124 12))
+		(line (pt 98 12)(pt 94 8))
+		(line (pt 94 8)(pt 98 4))
+		(line (pt 98 4)(pt 94 8))
+	)
+	(rotate180)
+	(annotation_block (location)(rect 240 264 296 288))
+)
+(pin
+	(output)
+	(rect 760 8 936 24)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "AUD_XCK" (rect 90 0 140 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 936 24 992 48))
+)
+(pin
+	(output)
+	(rect 816 512 999 528)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "FPGA_I2C_SCLK" (rect 90 0 177 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 999 528 1063 552))
+)
+(pin
+	(output)
+	(rect 816 528 992 544)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "FPGA_I2C_SDIN" (rect 90 0 166 17)(font "Intel Clear" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+	(annotation_block (location)(rect 992 544 1056 568))
+)
+(symbol
+	(rect 472 -16 616 112)
+	(text "altclklock" (rect 56 0 102 12)(font "Arial" ))
+	(text "inst7" (rect 8 112 30 129)(font "Intel Clear" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "fbin" (rect 24 56 45 70)(font "Arial" (font_size 8)))
+		(text "fbin" (rect 24 56 45 70)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+		(unused)
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "inclock" (rect 24 24 62 38)(font "Arial" (font_size 8)))
+		(text "inclock" (rect 24 24 62 38)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "inclocken" (rect 24 40 77 54)(font "Arial" (font_size 8)))
+		(text "inclocken" (rect 24 40 77 54)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+		(unused)
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "clock0" (rect 96 16 132 30)(font "Arial" (font_size 8)))
+		(text "clock0" (rect 93 24 129 38)(font "Arial" (font_size 8)))
+		(line (pt 144 32)(pt 128 32))
+		(unused)
+	)
+	(port
+		(pt 144 48)
+		(output)
+		(text "clock1" (rect 96 40 132 54)(font "Arial" (font_size 8)))
+		(text "clock1" (rect 93 40 129 54)(font "Arial" (font_size 8)))
+		(line (pt 144 48)(pt 128 48))
+		(unused)
+	)
+	(port
+		(pt 144 80)
+		(output)
+		(text "clock2" (rect 96 72 132 86)(font "Arial" (font_size 8)))
+		(text "clock2" (rect 93 72 129 86)(font "Arial" (font_size 8)))
+		(line (pt 144 80)(pt 128 80))
+		(unused)
+	)
+	(port
+		(pt 144 96)
+		(output)
+		(text "clock_ext" (rect 96 88 150 102)(font "Arial" (font_size 8)))
+		(text "clock_ext" (rect 78 88 132 102)(font "Arial" (font_size 8)))
+		(line (pt 144 96)(pt 128 96))
+	)
+	(port
+		(pt 144 64)
+		(output)
+		(text "locked" (rect 96 56 132 70)(font "Arial" (font_size 8)))
+		(text "locked" (rect 93 56 129 70)(font "Arial" (font_size 8)))
+		(line (pt 144 64)(pt 128 64))
+		(unused)
+	)
+	(parameter
+		"INCLOCK_PERIOD"
+		"20000"
+		"inclock period or frequency, e.g. \"20ns\" or \"50MHz\".  Default unit is \"ps\"."
+	)
+	(parameter
+		"INCLOCK_SETTINGS"
+		"\"USED\""
+		"Name of logic option with inclock settings (optional)"
+	)
+	(parameter
+		"VALID_LOCK_CYCLES"
+		"1"
+		"Number of valid half cycles before PLL is considered to be locked.  Use MegaWizard plug-in to calculate."
+		"1" "5" 
+	)
+	(parameter
+		"INVALID_LOCK_CYCLES"
+		"1"
+		"Number of invalid half cycles before lock is lost.  Use MegaWizard plug-in to calculate."
+		"1" "5" 
+	)
+	(parameter
+		"VALID_LOCK_MULTIPLIER"
+		"1"
+		"Multiplier for VALID_LOCK_CYCLES.  Must be 1 or 5."
+		"1" "5" 
+	)
+	(parameter
+		"INVALID_LOCK_MULTIPLIER"
+		"1"
+		"Multiplier for INVALID_LOCK_CYCLES.  Must be 1 or 5."
+		"1" "5" 
+	)
+	(parameter
+		"OPERATION_MODE"
+		"\"NORMAL\""
+		"Defines whether fbin is used to offset external delays"
+		"\"NORMAL\"" "\"ZERO_DELAY_BUFFER\"" "\"EXTERNAL_FEEDBACK\"" 
+	)
+	(parameter
+		"CLOCK0_BOOST"
+		"1"
+		"Frequency multiplier, must be 1, 2, or 4 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK0_DIVIDE"
+		"1"
+		"Frequency divide factor, must be 1 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK0_SETTINGS"
+		"\"UNUSED\""
+		"Name of logic option with clock0 settings (optional)"
+	)
+	(parameter
+		"CLOCK0_TIME_DELAY"
+		"\"0\""
+		"Time delay for clock0.  This is specified as a string in ps.  Legal values are between -2000 and 2000 in step of 250."
+	)
+	(parameter
+		"CLOCK1_BOOST"
+		"1"
+		"Frequency multiplier, must be 1, 2, or 4 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK1_DIVIDE"
+		"1"
+		"Frequency divide factor, must be 1 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK1_SETTINGS"
+		"\"UNUSED\""
+		"Name of logic option with clock1 settings (optional)"
+	)
+	(parameter
+		"CLOCK1_TIME_DELAY"
+		"\"0\""
+		"Time delay for clock1.  This is specified as a string in ps.  Legal values are between -2000 and 2000 in step of 250."
+	)
+	(parameter
+		"CLOCK2_BOOST"
+		"1"
+		"Frequency multiplier, must be 1, 2, or 4 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK2_DIVIDE"
+		"1"
+		"Frequency divide factor, must be 1 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK2_SETTINGS"
+		"\"UNUSED\""
+		"Name of logic option with clock2 settings (optional)"
+	)
+	(parameter
+		"CLOCK2_TIME_DELAY"
+		"\"0\""
+		"Time delay for clock2.  This is specified as a string in ps.  Legal values are between -2000 and 2000 in step of 250."
+	)
+	(parameter
+		"CLOCK_EXT_BOOST"
+		"4"
+		"Frequency multiplier, must be 1, 2, or 4 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK_EXT_DIVIDE"
+		"18"
+		"Frequency divide factor, must be 1 for Apex20K, or > 0 for Apex20KE"
+	)
+	(parameter
+		"CLOCK_EXT_SETTINGS"
+		"\"USED\""
+		"Name of logic option with clock_ext settings (optional)"
+	)
+	(parameter
+		"CLOCK_EXT_TIME_DELAY"
+		"\"0\""
+		"Time delay for clock_ext.  This is specified as a string in ps.  Legal values are between -2000 and 2000 in step of 250."
+	)
+	(parameter
+		"OUTCLOCK_PHASE_SHIFT"
+		"0"
+		"Phase shift of output clocks relative to inclock, e.g. \"10ns\".  Default unit is \"ps\"."
+	)
+	(drawing
+		(rectangle (rect 16 16 128 112))
+	)
+	(annotation_block (parameter)(rect 616 -496 855 -21))
+)
+(symbol
+	(rect 544 488 720 568)
+	(text "codec_init" (rect 5 0 54 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 30 81)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CLOCK_50" (rect 0 0 55 12)(font "Arial" ))
+		(text "CLOCK_50" (rect 21 27 76 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RES_N" (rect 0 0 36 12)(font "Arial" ))
+		(text "RES_N" (rect 21 43 57 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "SCLK" (rect 0 0 28 12)(font "Arial" ))
+		(text "SCLK" (rect 132 27 160 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "SDIN" (rect 0 0 27 12)(font "Arial" ))
+		(text "SDIN" (rect 133 43 160 55)(font "Arial" ))
+		(line (pt 176 48)(pt 160 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 64))
+	)
+)
+(symbol
+	(rect 448 160 704 368)
+	(text "s2p_adaptor" (rect 5 0 65 12)(font "Arial" ))
+	(text "inst" (rect 8 192 25 204)(font "Arial" ))
+	(port
+		(pt 256 144)
+		(input)
+		(text "DACDAT[15..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "DACDAT[15..0]" (rect 155 136 231 148)(font "Arial" ))
+		(line (pt 240 144)(pt 256 144)(line_width 3))
+	)
+	(port
+		(pt 256 64)
+		(input)
+		(text "ADCrdy" (rect 0 0 40 12)(font "Arial" ))
+		(text "ADCrdy" (rect 191 56 231 68)(font "Arial" ))
+		(line (pt 240 64)(pt 256 64))
+	)
+	(port
+		(pt 256 160)
+		(input)
+		(text "DACstb" (rect 0 0 38 12)(font "Arial" ))
+		(text "DACstb" (rect 193 152 231 164)(font "Arial" ))
+		(line (pt 240 160)(pt 256 160))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "AUD_ADCDAT" (rect 0 0 74 12)(font "Arial" ))
+		(text "AUD_ADCDAT" (rect 21 51 95 63)(font "Arial" ))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "AUD_ADCLRCK" (rect 0 0 82 12)(font "Arial" ))
+		(text "AUD_ADCLRCK" (rect 21 67 103 79)(font "Arial" ))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "AUD_DACLRCK" (rect 0 0 82 12)(font "Arial" ))
+		(text "AUD_DACLRCK" (rect 21 107 103 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "AUD_BCLK" (rect 0 0 57 12)(font "Arial" ))
+		(text "AUD_BCLK" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "CLOCK_50" (rect 0 0 55 12)(font "Arial" ))
+		(text "CLOCK_50" (rect 21 155 76 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "RST_N" (rect 0 0 35 12)(font "Arial" ))
+		(text "RST_N" (rect 21 171 56 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "ADCDAT[15..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "ADCDAT[15..0]" (rect 171 27 247 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(port
+		(pt 256 176)
+		(output)
+		(text "DACrdy" (rect 0 0 40 12)(font "Arial" ))
+		(text "DACrdy" (rect 202 171 242 183)(font "Arial" ))
+		(line (pt 256 176)(pt 240 176))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "ADCstb" (rect 0 0 38 12)(font "Arial" ))
+		(text "ADCstb" (rect 203 43 241 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48))
+	)
+	(port
+		(pt 0 96)
+		(output)
+		(text "AUD_DACDAT" (rect 0 0 74 12)(font "Arial" ))
+		(text "AUD_DACDAT" (rect 24 88 98 100)(font "Arial" ))
+		(line (pt 16 96)(pt 0 96))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 192))
+	)
+)
+(symbol
+	(rect 792 160 960 480)
+	(text "fir" (rect 5 0 15 12)(font "Arial" ))
+	(text "inst3" (rect 1 304 23 321)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ADCDAT[15..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "ADCDAT[15..0]" (rect 21 27 97 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 216)
+		(input)
+		(text "DACrdy" (rect 0 0 40 12)(font "Arial" ))
+		(text "DACrdy" (rect 21 211 61 223)(font "Arial" ))
+		(line (pt 0 216)(pt 16 216))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ADCstb" (rect 0 0 38 12)(font "Arial" ))
+		(text "ADCstb" (rect 21 43 59 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "CLOCK_50" (rect 0 0 55 12)(font "Arial" ))
+		(text "CLOCK_50" (rect 21 267 76 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "RST_N" (rect 0 0 35 12)(font "Arial" ))
+		(text "RST_N" (rect 21 283 56 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 0 184)
+		(output)
+		(text "DACDAT[15..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "DACDAT[15..0]" (rect 24 176 100 188)(font "Arial" ))
+		(line (pt 16 184)(pt 0 184)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(output)
+		(text "ADCrdy" (rect 0 0 40 12)(font "Arial" ))
+		(text "ADCrdy" (rect 24 56 64 68)(font "Arial" ))
+		(line (pt 16 64)(pt 0 64))
+	)
+	(port
+		(pt 0 200)
+		(output)
+		(text "DACstb" (rect 0 0 38 12)(font "Arial" ))
+		(text "DACstb" (rect 24 192 62 204)(font "Arial" ))
+		(line (pt 16 200)(pt 0 200))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 304))
+	)
+)
+(connector
+	(pt 616 80)
+	(pt 736 80)
+)
+(connector
+	(pt 736 80)
+	(pt 736 16)
+)
+(connector
+	(pt 344 16)
+	(pt 384 16)
+)
+(connector
+	(pt 384 16)
+	(pt 472 16)
+)
+(connector
+	(pt 384 520)
+	(pt 544 520)
+)
+(connector
+	(pt 376 536)
+	(pt 424 536)
+)
+(connector
+	(pt 424 536)
+	(pt 544 536)
+)
+(connector
+	(pt 384 16)
+	(pt 384 320)
+)
+(connector
+	(pt 240 232)
+	(pt 448 232)
+)
+(connector
+	(pt 240 272)
+	(pt 448 272)
+)
+(connector
+	(pt 240 192)
+	(pt 448 192)
+)
+(connector
+	(pt 384 320)
+	(pt 448 320)
+)
+(connector
+	(pt 424 336)
+	(pt 448 336)
+)
+(connector
+	(pt 792 448)
+	(pt 424 448)
+)
+(connector
+	(pt 424 336)
+	(pt 424 448)
+)
+(connector
+	(pt 424 448)
+	(pt 424 536)
+)
+(connector
+	(pt 792 432)
+	(pt 384 432)
+)
+(connector
+	(pt 384 320)
+	(pt 384 432)
+)
+(connector
+	(pt 384 432)
+	(pt 384 520)
+)
+(connector
+	(pt 816 520)
+	(pt 720 520)
+)
+(connector
+	(pt 816 536)
+	(pt 720 536)
+)
+(connector
+	(pt 736 16)
+	(pt 760 16)
+)
+(connector
+	(pt 448 216)
+	(pt 240 216)
+)
+(connector
+	(pt 448 256)
+	(pt 240 256)
+)
+(connector
+	(pt 792 192)
+	(pt 704 192)
+	(bus)
+)
+(connector
+	(pt 792 208)
+	(pt 704 208)
+)
+(connector
+	(pt 792 224)
+	(pt 704 224)
+)
+(connector
+	(pt 768 304)
+	(pt 704 304)
+	(bus)
+)
+(connector
+	(pt 768 304)
+	(pt 768 344)
+	(bus)
+)
+(connector
+	(pt 768 344)
+	(pt 792 344)
+	(bus)
+)
+(connector
+	(pt 760 320)
+	(pt 704 320)
+)
+(connector
+	(pt 760 320)
+	(pt 760 360)
+)
+(connector
+	(pt 760 360)
+	(pt 792 360)
+)
+(connector
+	(pt 752 336)
+	(pt 704 336)
+)
+(connector
+	(pt 752 336)
+	(pt 752 376)
+)
+(connector
+	(pt 752 376)
+	(pt 792 376)
+)
+(junction (pt 384 16))
+(junction (pt 384 320))
+(junction (pt 424 536))
+(junction (pt 424 448))
+(junction (pt 384 432))
