@@ -1,0 +1,121 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 320 272)
+	(text "s2p_adaptor" (rect 5 0 65 12)(font "Arial" ))
+	(text "inst" (rect 8 192 25 204)(font "Arial" ))
+	(port
+		(pt 256 144)
+		(input)
+		(text "DACDAT[15..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "DACDAT[15..0]" (rect 155 136 231 148)(font "Arial" ))
+		(line (pt 240 144)(pt 256 144)(line_width 3))
+	)
+	(port
+		(pt 256 64)
+		(input)
+		(text "ADCrdy" (rect 0 0 40 12)(font "Arial" ))
+		(text "ADCrdy" (rect 191 56 231 68)(font "Arial" ))
+		(line (pt 240 64)(pt 256 64))
+	)
+	(port
+		(pt 256 160)
+		(input)
+		(text "DACstb" (rect 0 0 38 12)(font "Arial" ))
+		(text "DACstb" (rect 193 152 231 164)(font "Arial" ))
+		(line (pt 240 160)(pt 256 160))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "AUD_ADCDAT" (rect 0 0 74 12)(font "Arial" ))
+		(text "AUD_ADCDAT" (rect 21 51 95 63)(font "Arial" ))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "AUD_ADCLRCK" (rect 0 0 82 12)(font "Arial" ))
+		(text "AUD_ADCLRCK" (rect 21 67 103 79)(font "Arial" ))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "AUD_DACLRCK" (rect 0 0 82 12)(font "Arial" ))
+		(text "AUD_DACLRCK" (rect 21 107 103 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "AUD_BCLK" (rect 0 0 57 12)(font "Arial" ))
+		(text "AUD_BCLK" (rect 21 27 78 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "CLOCK_50" (rect 0 0 55 12)(font "Arial" ))
+		(text "CLOCK_50" (rect 21 155 76 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "RST_N" (rect 0 0 35 12)(font "Arial" ))
+		(text "RST_N" (rect 21 171 56 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "ADCDAT[15..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "ADCDAT[15..0]" (rect 171 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(port
+		(pt 256 176)
+		(output)
+		(text "DACrdy" (rect 0 0 40 12)(font "Arial" ))
+		(text "DACrdy" (rect 202 171 235 183)(font "Arial" ))
+		(line (pt 256 176)(pt 240 176))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "ADCstb" (rect 0 0 38 12)(font "Arial" ))
+		(text "ADCstb" (rect 203 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48))
+	)
+	(port
+		(pt 0 96)
+		(output)
+		(text "AUD_DACDAT" (rect 0 0 74 12)(font "Arial" ))
+		(text "AUD_DACDAT" (rect 24 88 98 100)(font "Arial" ))
+		(line (pt 16 96)(pt 0 96))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 192))
+	)
+)
