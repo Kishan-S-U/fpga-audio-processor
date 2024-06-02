@@ -5,7 +5,7 @@ The overall system comprising the codec chip, s2p adaptor, and FIR filter repres
 
 Design Steps
 -
-<img src="../res/waveform analysis.jpg" align="center" />
+<img src="../res/waveform analysis.png" align="center" />
 The figure above shows how the timing analysis was performed. 
 1. Input data[AUD_ADCDAT] is in serial format. (16 bits long, since we are only performing analysis on left channel)
 2. It will complete parallel conversion in 16 clock cycles [ADCDAT].
