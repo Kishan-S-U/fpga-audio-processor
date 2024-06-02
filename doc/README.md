@@ -31,4 +31,4 @@ An FIR filter is characterized by its impulse response, which is finite because 
 
 The images below shows the frequency and phase response of this FIR filter.
 
-<img src="../res/frequency response.png" align="center" title="Frequency Response"/> <img src="../res/phase response.png" align="center" title="Phase Response"/>
+<img src="../res/frequency response.png" align="center" title="Frequency Response" width="48%" height="50%"/> <img src="../res/phase response.png" align="center" title="Phase Response" width="48%" height="50%"/>
